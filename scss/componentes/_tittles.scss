@@ -31,3 +31,12 @@
     align-self: center;
     text-align: justify;
 }
+
+.contactanos h2 {
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 10px;
+    align-self: flex-start;
+    color: $primario;
+}

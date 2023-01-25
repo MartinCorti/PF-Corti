@@ -1,8 +1,5 @@
-/*Reset de CSS clásico*/
-@import "./normalize/reset";
-
-/* Main & Fondo*/
-@import "./general/main";
+/*Utilities*/
+@import "./utilities/color";
 
 /*Componentes*/
 @import "./componentes/navbar";
@@ -11,7 +8,13 @@
 @import "./componentes/cards";
 @import "./componentes/text";
 @import "./componentes/buttons";
+@import "./componentes/images";
 
+/*Reset de CSS clásico*/
+@import "./normalize/reset";
+
+/*Main & Fondo*/
+@import "./general/main";
 
 /*Layout*/
 @import "./layout/grid";
@@ -21,5 +24,4 @@
 @import "./transitions/transitions";
 
 /*Footer*/
-
 @import "./general/footer";

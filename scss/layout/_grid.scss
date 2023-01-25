@@ -5,10 +5,10 @@
     margin: 15px;
     justify-content: center !important;
     justify-items: center !important;
-}
-
-.fotones div {
-    width: 90%;
+    
+    &__div {
+        width: 90%;
+    }
 }
 
 .tarjeta_producto {
@@ -28,13 +28,6 @@
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(171, 214, 215);
     transition: all 1.5s;
-}
-
-.tarjeta_producto:hover {
-    width: 65%;
-    height: 100%;
-    margin: 0px;
-    background-color: rgb(228, 180, 122);
 }
 
 .contactanos {
