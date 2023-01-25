@@ -1,0 +1,25 @@
+/*Reset de CSS clásico*/
+@import "./normalize/reset";
+
+/* Main & Fondo*/
+@import "./general/main";
+
+/*Componentes*/
+@import "./componentes/navbar";
+@import "./componentes/tittles";
+@import "./componentes/carousel";
+@import "./componentes/cards";
+@import "./componentes/text";
+@import "./componentes/buttons";
+
+
+/*Layout*/
+@import "./layout/grid";
+@import "./layout/flex";
+
+/*Transitions*/
+@import "./transitions/transitions";
+
+/*Footer*/
+
+@import "./general/footer";
