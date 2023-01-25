@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: rgb(228, 180, 122) !important;
+}
+
+/* .fa-cart-shopping img {
+    width: 20%;
+} */
+
+main {
+    /* background-image: url("../assets/img/fondo_kitesurf.jpg"); */
+    /* background-image: url("../assets/videos/oceano.mov"); */
+    /* background-color: rgb(242, 161, 62); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgba(red, green, blue, alpha);    */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: abs;
+
+}
+
+#foto_fondo {
+    position: fixed;
+    min-width: auto;
+    min-height: 100%;
+    /* min-width: 100%;
+    min-height: 100%; */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter: opacity(50%);
+}
+
+.titulo_principal {
+    font-family: 'Barlow', sans-serif;
+    ;
+    font-style: oblique;
+    font-weight: bolder;
+    color: rgb(201, 105, 61);
+    width: 100%;
+    margin: 30px 10px 0px 10px;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    border: 10px auto 5px auto;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+}
+
+.carousel_principal {
+    width: 55%;
+    margin: 30px auto 10px auto;
+    padding: 0px 20px 20px 20px;
+    border: 0px 20px 20px 20px;
+}
+
+.ofertas {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin: 15px;
+    justify-content: center !important;
+    justify-items: center !important;
+}
+
+.ofertas div {
+    width: 90%;
+}
+
+.ofertas div img {
+    width: 90%;
+    margin: 20px;
+    
+}
+
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.marcas img {
+    width: 10%;
+    margin: 20px;
+}
+
+.titulo_producto {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    margin: 1rem 2rem 2rem 2rem;
+    row-gap: 10px;
+    column-gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cards_x9 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 1rem 2rem 2rem 2rem;
+    row-gap: 10px;
+    column-gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta_producto {
+    display: grid;
+    grid-template-areas:    "imagen"
+                            "titulo"
+                            "precio"
+                            "boton";
+    grid-template-rows: 5fr 2fr 1fr 1fr;
+    border: solid 5px black;
+    border-style: double;
+    width: 60%;
+    height: 95%;
+    padding: 20px;
+    margin: 10px;
+    justify-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(171, 214, 215);
+    /* background-image: linear-gradient (rgb(171, 214, 215), rgb(255, 170, 0)) ; */
+    transition: all 1.5s;
+}
+
+.tarjeta_producto:hover {
+    width: 65%;
+    height: 100%;
+    margin: 0px;
+    background-color: rgb(228, 180, 122);
+}
+
+.tarjeta_producto img {
+    grid-area: imagen;
+    width: 90%;
+}
+
+.tarjeta_producto h2 {
+    grid-area: titulo;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    font-style: oblique;
+    height: 30%;
+    align-self: center;
+    text-align: justify;
+}
+
+.tarjeta_producto p {
+    grid-area: precio;
+    font-weight: bolder;
+    font-size: large;
+    text-align: justify;
+}
+
+.tarjeta_producto button {
+    grid-area: boton;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 40%;
+    padding: 0.5rem;   
+}
+
+.tarjeta_producto button:hover {
+    background-color: rgb(48, 17, 184);
+    color: white;
+}
+
+
+.foil img {
+    width: 15%;
+    margin: 30px;
+    padding: 30px;
+}
+
+#foto_fondo {
+    position: fixed;
+    /* min-width: auto;
+    min-height: 100%; */
+    
+    /* min-width: 100%;
+    min-height: 100%; */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter: opacity(50%);
+}
+
+.contactanos {
+    display: grid;
+    grid-template-rows: 10rem 34rem;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: rgb(228, 180, 122);
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* .footer_abajo {
+    position: relative;
+    bottom: auto;
+} */
+
+.redes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+
+/* USAR ESTE PARA MAQUETAR PARA TABLET Y DSPS PARA CELULAR */
+
+/* @media screen and (max-width: 1023px) {
+    .galeria img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .galeria img {
+        width: 100%;
+    }
+} */
+
+/* HASTA ACÁ */
+
+/* @media screen and (min-width: 480px){
+    .galeria img {
+        width:50%
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #grilla {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "encabezado"
+                            "contenido_principal"
+                            "pie_de_pagina";
+    }
+
+    .galeria img {
+        width: 30%;
+    }
+
+    .logo {
+        flex-direction: row;
+    }
+} */
+
+
+/* #grid-1 {
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+}
+
+main {display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#grid-1 > main {
+    background-color: goldenrod;
+}
+
+div {display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#grid-1 > div {
+    background-color: goldenrod;
+}
+
+#grid-1 > div:nth-child(1) {
+    background-color: white;
+    display:block;
+}
+
+#grid-2 {
+    display: grid;
+    grid-gap: 15px;
+    height: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+#grid-2 > div {
+    background-color: purple;
+    color:white
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.usuario {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.busqueda img {
+    width: 60px;
+    height: 60px;
+}
+
+.usuario img {
+    width: 20px;
+    height: 20px;
+}
+
+ul {list-style-type: none;
+    background-color: rgb(61, 214, 31);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+ */
