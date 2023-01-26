@@ -1,5 +1,21 @@
 @charset "UTF-8";
 /*Utilities*/
+/*Mapa de Colores en Redes*/
+.btn--twitter {
+  background-color: #55acee; }
+
+.btn--facebook {
+  background-color: #3a5795; }
+
+.btn--pinterest {
+  background-color: #c8232c; }
+
+.btn--instagram {
+  background-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+
+.btn--youtube {
+  background-color: #c4302b; }
+
 /*Componentes*/
 .navbar-brand img {
   width: 100%;
@@ -49,9 +65,9 @@
   color: #e4b47a; }
 
 .carousel_principal {
-  width: 55%;
-  margin: 30px auto 10px auto;
-  padding: 0px 20px 20px 20px;
+  width: 100%;
+  margin: 10px auto 10px auto;
+  padding: 0px 10px 20px 10px;
   border: 0px 20px 20px 20px; }
 
 .tarjeta_producto {
@@ -134,7 +150,7 @@ main {
   .galeria__div {
     width: 90%; }
 
-.cards {
+.cards, .cards_x9 {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 50% 50%;
@@ -146,15 +162,7 @@ main {
   height: 100%; }
 
 .cards_x9 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  margin: 1rem 2rem 2rem 2rem;
-  row-gap: 10px;
-  column-gap: 0;
-  width: 100%;
-  height: 100%; }
+  grid-template-rows: 1fr 1fr 1fr; }
 
 .contactanos {
   display: grid;
@@ -205,7 +213,7 @@ footer {
 /*RESPONSIVE PARA TABLET*/
 @media screen and (max-width: 1023px) {
   .carousel_principal {
-    width: 85%; }
+    width: 100%; }
   .galeria {
     display: grid;
     grid-template-columns: auto auto;
@@ -217,7 +225,7 @@ footer {
       width: 70%;
       justify-self: center;
       align-self: center; }
-  .cards {
+  .cards, .cards_x9 {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr 1fr; }
@@ -249,7 +257,7 @@ footer {
     .marcas img {
       width: 50%;
       height: 50%; }
-  .cards {
+  .cards, .cards_x9 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto; }
