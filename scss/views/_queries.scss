@@ -1,0 +1,109 @@
+/*RESPONSIVE PARA TABLET*/
+
+@media screen and (max-width: 1023px) {
+    
+    .carousel_principal {
+        width: 85%;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        margin: 15px;
+        justify-content: center !important;
+        justify-items: center !important;
+
+        & div img {
+            width: 70%;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .cards_x9 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/*RESPONSIVE PARA CELULAR*/
+
+@media screen and (max-width: 479px) {
+    .carousel_principal {
+        width: 100%;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        margin: 15px;
+        justify-content: center !important;
+        justify-items: center !important;
+
+        & div img {
+            width: 90%;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    .marcas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+
+        & img {
+            width: 50%;
+            height: 50%
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    
+    .cards_x9 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .tarjeta_producto {
+        width: 95%;
+        height: 80%;
+        grid-template-columns: auto;
+
+        & img {
+            width: 40%;
+        }
+    }
+
+    .tarjeta_producto:hover {
+        width: 100%;
+        height: 85%;
+        margin: 0px;
+        background-color: rgb(228, 180, 122);
+    }
+
+    .formulario {
+        width: 80%;
+        height: 100%;
+        justify-self: center;
+    }
+
+    footer p {
+        font-size: small;
+    }
+}

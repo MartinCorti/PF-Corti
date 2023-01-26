@@ -54,27 +54,20 @@
   padding: 0px 20px 20px 20px;
   border: 0px 20px 20px 20px; }
 
-.cards {
+.tarjeta_producto {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 50% 50%;
+  grid-template-areas: "imagen" "titulo" "precio" "boton";
+  grid-template-rows: 5fr 2fr 1fr 1fr;
+  border: solid 5px black;
+  border-style: double;
+  width: 60%;
+  height: 95%;
+  padding: 20px;
+  margin: 10px;
   justify-items: center;
-  margin: 1rem 2rem 2rem 2rem;
-  row-gap: 10px;
-  column-gap: 0;
-  width: 100%;
-  height: 100%; }
-
-.cards_x9 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  margin: 1rem 2rem 2rem 2rem;
-  row-gap: 10px;
-  column-gap: 0;
-  width: 100%;
-  height: 100%; }
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #abd6d7;
+  transition: all 1.5s; }
 
 .tarjeta_producto p {
   grid-area: precio;
@@ -93,7 +86,7 @@ footer p {
   border-radius: 40%;
   padding: 0.5rem; }
 
-.fotones div img {
+.galeria div img {
   width: 90%;
   margin: 20px; }
 
@@ -131,30 +124,37 @@ main {
   filter: opacity(50%); }
 
 /*Layout*/
-.fotones {
+.galeria {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
   margin: 15px;
   justify-content: center !important;
   justify-items: center !important; }
-  .fotones__div {
+  .galeria__div {
     width: 90%; }
 
-.tarjeta_producto {
+.cards {
   display: grid;
-  grid-template-areas: "imagen" "titulo" "precio" "boton";
-  grid-template-rows: 5fr 2fr 1fr 1fr;
-  border: solid 5px black;
-  border-style: double;
-  width: 60%;
-  height: 95%;
-  padding: 20px;
-  margin: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50% 50%;
   justify-items: center;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #abd6d7;
-  transition: all 1.5s; }
+  margin: 1rem 2rem 2rem 2rem;
+  row-gap: 10px;
+  column-gap: 0;
+  width: 100%;
+  height: 100%; }
+
+.cards_x9 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 1rem 2rem 2rem 2rem;
+  row-gap: 10px;
+  column-gap: 0;
+  width: 100%;
+  height: 100%; }
 
 .contactanos {
   display: grid;
@@ -200,3 +200,77 @@ footer {
   text-align: center;
   padding: 5px;
   margin-top: 5px; }
+
+/*Responsive*/
+/*RESPONSIVE PARA TABLET*/
+@media screen and (max-width: 1023px) {
+  .carousel_principal {
+    width: 85%; }
+  .galeria {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    margin: 15px;
+    justify-content: center !important;
+    justify-items: center !important; }
+    .galeria div img {
+      width: 70%;
+      justify-self: center;
+      align-self: center; }
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .cards_x9 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr; } }
+
+/*RESPONSIVE PARA CELULAR*/
+@media screen and (max-width: 479px) {
+  .carousel_principal {
+    width: 100%; }
+  .galeria {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    margin: 15px;
+    justify-content: center !important;
+    justify-items: center !important; }
+    .galeria div img {
+      width: 90%;
+      justify-self: center;
+      align-self: center; }
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center; }
+    .marcas img {
+      width: 50%;
+      height: 50%; }
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+  .cards_x9 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+  .tarjeta_producto {
+    width: 95%;
+    height: 80%;
+    grid-template-columns: auto; }
+    .tarjeta_producto img {
+      width: 40%; }
+  .tarjeta_producto:hover {
+    width: 100%;
+    height: 85%;
+    margin: 0px;
+    background-color: #e4b47a; }
+  .formulario {
+    width: 80%;
+    height: 100%;
+    justify-self: center; }
+  footer p {
+    font-size: small; } }
