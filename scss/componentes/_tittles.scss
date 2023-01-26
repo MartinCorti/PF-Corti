@@ -18,6 +18,8 @@
     text-align: center;
     padding: 30px;
     font-weight: bolder;
+    color: $terciario;
+    font-size: xx-large;
 }
 
 .tarjeta_producto h2 {
@@ -32,11 +34,18 @@
     text-align: justify;
 }
 
-.contactanos h2 {
+.formulario h2 {
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     font-family: 'Barlow', sans-serif;
     margin-top: 10px;
     align-self: flex-start;
-    color: $primario;
+    color: $terciario;
 }
+
+.nosotros h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: $terciario;
+    }
